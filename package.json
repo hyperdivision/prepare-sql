@@ -1,5 +1,5 @@
 {
-  "name": "sql-t",
+  "name": "prepare-sql",
   "version": "1.0.0",
   "description": "SQL template strings",
   "main": "index.js",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hyperdivision/sql-t.git"
+    "url": "git+https://github.com/hyperdivision/prepare-sql.git"
   },
   "keywords": [
     "pg",
@@ -32,7 +32,7 @@
   "author": "Emil Bay <github@tixz.dk>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/hyperdivision/sql-t/issues"
+    "url": "https://github.com/hyperdivision/prepare-sql/issues"
   },
-  "homepage": "https://github.com/hyperdivision/sql-t#readme"
+  "homepage": "https://github.com/hyperdivision/prepare-sql#readme"
 }

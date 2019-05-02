@@ -1,13 +1,13 @@
-# `sql-t`
+# `prepare-sql`
 
-[![Build Status](https://travis-ci.org/hyperdivision/sql-t.svg?branch=master)](https://travis-ci.org/hyperdivision/sql-t)
+[![Build Status](https://travis-ci.org/hyperdivision/prepare-sql.svg?branch=master)](https://travis-ci.org/hyperdivision/prepare-sql)
 
 > SQL template strings
 
 ## Usage
 
 ```js
-var SQL = require('sql-t')
+var SQL = require('prepare-sql')
 
 const username = 'emilbayes'
 // Query with template string
@@ -48,7 +48,7 @@ Works directly with `pg`
 
 ```js
 const { Client } = require('pg')
-const SQL = require('sql-t')
+const SQL = require('prepare-sql')
 const client = new Client()
 
 client.connect()
@@ -95,7 +95,7 @@ statements or combining many rows for `INSERT`. Default separator is `','`
 ## Install
 
 ```sh
-npm install sql-t
+npm install prepare-sql
 ```
 
 ## License
