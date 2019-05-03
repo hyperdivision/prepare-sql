@@ -43,7 +43,17 @@ test('nested statements', function (assert) {
   assert.end()
 })
 
-test('join', function (assert) {
+test.only('join', function (assert) {
+  var q0 = SQL`${SQL.join([])}`
+  assert.same(q0.text, '')
+  assert.same(q0.sql, '')
+  assert.same(q0.values, [])
+
+  var q00 = SQL`${SQL.join([SQL``])}`
+  assert.same(q00.text, '')
+  assert.same(q00.sql, '')
+  assert.same(q00.values, [])
+
   var q1 = SQL`UPDATE t SET ${SQL.join([SQL`a = b`, SQL`k = ${'v'}`])}`
   assert.same(q1.text, 'UPDATE t SET a = b, k = $1')
   assert.same(q1.sql, 'UPDATE t SET a = b, k = ?')

@@ -52,6 +52,13 @@ class Query {
       if (val instanceof Query) {
         // Remove the Query from values
         this.values.splice(k, 1)
+
+        // Empty SQL statement
+        if (val.pieces.length === 0) {
+          mergeAdjecent(this.pieces, j, 1)
+          continue
+        }
+
         // Add in the text pieces from the query
         this.pieces.splice(j, 0, ...val.pieces)
 
